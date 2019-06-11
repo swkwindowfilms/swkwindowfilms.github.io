@@ -1,16 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% include scripts.html %}
     <title>{{site.title}}</title>
-  </head>
-  <body>
+</head>
+
+<body>
     {% include navbar.html %}
     <div>
         {{content}}
     </div>
-  </body>
+
+    <script>
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    </script>
+</body>
+
 </html>

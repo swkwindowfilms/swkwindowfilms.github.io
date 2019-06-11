@@ -10,3 +10,29 @@
 
 @import 'mainBanner';
 @import 'section';
+
+.cta-btn{
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.2em;
+    text-decoration: none !important;
+    &:hover{
+        color: white;
+    }
+}
+
+.cta-btn-alt{
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.2em;
+    text-decoration: none !important;
+    &:hover{
+        color: white;
+    }
+}
