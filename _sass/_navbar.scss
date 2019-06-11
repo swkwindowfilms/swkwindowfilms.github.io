@@ -1,0 +1,76 @@
+@-webkit-keyframes slide {
+    100% { padding-right: 75px; }
+}
+
+@keyframes slide {
+    100% { padding-right: 75px; }
+}
+
+.navi{
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    @include breakpoint(md){
+        top: 50px;
+        height: auto;
+        background-color: none;
+        width: auto;
+    }
+
+    .toggle, .toggle-close{
+        @include breakpoint(md){
+            display: none;
+        }
+
+        display: flex;
+        justify-content: flex-end;
+
+        i{
+            font-size: 1.5em;
+        }
+    }
+
+    .navbar-content{
+        display: none;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: left;
+
+        @include breakpoint(md){
+            display: block;
+            text-align: right;
+            background-color: rgba(0,0,0,0.5);
+
+            top: 10%;
+            right: 0;
+            bottom: initial;
+            left: initial;
+        }
+    }
+    
+    .navbar-link{
+        color: white;
+        cursor: pointer;
+        padding: 0.5rem;
+
+        &:hover{
+            @include breakpoint(md){
+                -webkit-animation: slide 0.5s forwards;
+                animation: slide 0.5s forwards;
+            }
+            background: black;
+            color: red;
+        }
+    }
+    
+}
