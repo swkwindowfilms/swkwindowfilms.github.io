@@ -15,10 +15,18 @@
             <a>Home</a>
         </div>
         <div class="navbar-link">
-            <a>Products</a>
+            <a href="#products">Products</a>
         </div>
         <div class="navbar-link">
-            <a>Contact</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 </div>
+
+<script>
+    if ($(window).width() < 768) {
+        $('.navbar-link').on('click', function () {
+            $('.navbar-content').hide();
+        })
+    }
+</script>
