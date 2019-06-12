@@ -53,3 +53,9 @@
 .max-height{
     height: 100%;
 }
+
+.fb-page,
+.fb-page span,
+.fb-page span iframe[style] {
+    max-width: 100% !important;
+}

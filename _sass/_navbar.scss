@@ -62,20 +62,14 @@
         cursor: pointer;
         padding: 0.5rem;
 
-        a{
-            color: white;
-            text-decoration: none;
-            &:hover{
-                color: red;
-            }
-        }
+        color:white;
         &:hover{
             @include breakpoint(md){
                 -webkit-animation: slide 0.5s forwards;
                 animation: slide 0.5s forwards;
             }
             background: black;
-            a{color: red;}
+            color: red;
         }
     }
     

@@ -10,30 +10,49 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3&appId=1160256384013820&autoLogAppEvents=1"></script>
     {% include navbar.html %}
-    <div>
+    <div id="home">
         {{content}}
     </div>
 
-    <div class="section-dark">
+    <footer class="section-dark">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 text-center py-2">
-                    <div><img width="100" src="{{ site.url }}/assets/img/3M.png" /><br/><p>Window Films</p></div>
+                <div class="col-12 col-md-4 text-center py-2">
+                    <div>
+                        <img width="100" src="{{ site.url }}/assets/img/3M.png" /><br/>
+                        <h5>Window Films</h5>
+                        <p class="text-justify">3M, a North American company, has been providing innovative marketplace solutions for more than 102 years. They invented and marketed the first window film product and continue to set the standard in the window film industry. Competitors repeatedly state that their window films are “just as good as 3M”, but the truth is - not all window film is created equal!</p>
+                    </div>
+                    <hr/>
                 </div>
     
-                <div class="col-12 col-sm-6 col-md-4 text-center py-2">
-                    <a class="cta-btn hvr-buzz-out" href="https://api.whatsapp.com/send?phone={{site.phone}}">Contact</a>
+                <div class="col-12 col-md-4 text-center py-2">
+                    <h4>Contact</h4>
+                    <a href="tel:60109829331">+6010 9829331</a><br/>
+                    <a class="my-2 cta-btn hvr-buzz-out" href="https://api.whatsapp.com/send?phone={{site.phone}}">Contact</a>
+                    <hr/>
+                    <!-- <p class="text-justify"><span class="text-red">Ground Floor Parcel 5.0</span><br/>Block A, The Laksamana Commercial Suites<br/>Jalan Laksamana Cheng Ho, 93350 Kuching, Sarawak</p> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4090407143867!2d110.34309401475416!3d1.5229036988893978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMzEnMjIuNSJOIDExMMKwMjAnNDMuMCJF!5e0!3m2!1sen!2smy!4v1560321867220!5m2!1sen!2smy" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
     
-                <div class="col-12 col-sm-6 col-md-4 text-justify py-2">
+                <div class="col-12 col-md-4 text-center py-2 text-center">
+                    <!-- <h4>Social Media</h4>
+                    <div class="fb-page" data-href="https://www.facebook.com/3MSarawak" data-tabs="timeline" data-width="500" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/3MSarawak" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/3MSarawak">3M Window Film Sarawak - Charles Chin 010-9829331</a></blockquote></div> -->
+                    <img width="175" src="{{site.url}}/assets/img/seal.png" />
+                    <hr/>
                     <a href="{{site.url}}#home">Back to Top</a> <br/> 
                     <a href="{{site.url}}#more">More Info</a> <br/> 
                     <a href="{{site.url}}#products">Products</a> <br/>
                 </div>
             </div>
+            <div class="copyright">
+                <span>Copyright of 3M Sarawak Window Films - 2019 | Powered by <a target="_blank" href="https://hexabyn.com">Hexabyn Technologies</a></span>
+            </div>
         </div>
-    </div>
+    </footer>
 
     <script>
         $(function () {
