@@ -22,4 +22,12 @@
             $('.navbar-content').hide();
         })
     }
+
+    $(window).resize(function(){
+        if ($(window).width() < 768) {
+            $('.navbar-link').on('click', function () {
+                $('.navbar-content').hide();
+            })
+        }
+    });
 </script>

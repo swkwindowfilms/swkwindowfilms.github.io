@@ -31,7 +31,7 @@
         justify-content: flex-end;
 
         i{
-            font-size: 1.5em;
+            font-size: 1.7em;
         }
     }
 
@@ -61,8 +61,10 @@
     .navbar-link{
         cursor: pointer;
         padding: 0.5rem;
-
+        font-size: 1.25em;
         color:white;
+
+        @include breakpoint(md){font-size: initial;}
         &:hover{
             @include breakpoint(md){
                 -webkit-animation: slide 0.5s forwards;

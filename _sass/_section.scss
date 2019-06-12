@@ -1,13 +1,21 @@
 .section-dark{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include breakpoint(md){
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
     background-color: #333;
     color: white;
 }
 
 .section-light{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include breakpoint(md){
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
     background-color: #f8f9fa;
     color: black;
 }
