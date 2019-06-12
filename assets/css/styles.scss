@@ -54,8 +54,9 @@
     height: 100%;
 }
 
-.fb-page,
-.fb-page span,
-.fb-page span iframe[style] {
-    max-width: 100% !important;
+#more{
+    h3, i{
+        color: red;
+        text-shadow: 2px 2px 4px #000000;
+    }
 }
