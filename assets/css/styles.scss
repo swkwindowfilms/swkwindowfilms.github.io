@@ -55,8 +55,24 @@
 }
 
 #more{
-    h3, i{
+    i{
         color: red;
         text-shadow: 2px 2px 4px #000000;
+        font-size: 3em;
+    }
+    .container{
+        width: 90%;
+        @include breakpoint(sm){
+            width: initial;
+        }
+    }
+    .col{
+        width: 90%;
+        margin: auto;
+    }
+    h5{
+        text-shadow: 2px 2px 4px #000000;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 }

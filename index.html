@@ -24,7 +24,7 @@ layout: default
         <h2>Why choose <span class="text-hide">3M</span><img width="75" src="{{ site.baseurl }}/assets/img/3M.png" /> ?
         </h2>
 
-        <div class="row">
+        <!-- <div class="row"> -->
             <!-- <div class="col-12 col-md-6 py-3 text-justify">
                 <h3 class="text-center">Carbon Technology</h3>
                 {{ 'Think about the trees after a bushfire, the carbon is still very black years later. That’s an indication of how stable carbon is and that same stability means that 3M window films consistently protects the interior of your home, office, or vehicle from the all the  aspects of solar radiation. It will keep the occupants  safer from harsh UV rays.' | markdownify }}
@@ -44,27 +44,30 @@ layout: default
                 <h3 class="text-center">Comprehensive Warranties</h3>
                 {{ 'Whether you choose 3M™ Window Films for your car, home, or your place of business, 3M™ Window Films give you the peace of mind that your installation will be covered with one of the most comprehensive warranties available.' | markdownify }}
             </div> -->
-            <div class="col-12 col-md-4 py-3 text-justify">
-                <h3 class="text-center"><i class="hvr-buzz-out fas fa-shield-alt"></i><br/>Greater Protection</h3>
-                {{ '3M Abrasion Resistant Technology allows them to apply a much more durable hard coat than the competition. This technology protects the film from scratching or demetalizing when the film is bumped, touched or cleaned.' | markdownify }}
+
+            <div class="about pt-2">
+                <div class="col">
+                    <h5 class="text-center"><i class="hvr-buzz-out fas fa-shield-alt"></i><br /><br />Greater Protection</h5>
+                    {{ '3M Abrasion Resistant Technology allows them to apply a much more durable hard coat than the competition. This technology protects the film from scratching or demetalizing when the film is bumped, touched or cleaned.' | markdownify }}
+                </div>
+                <div class="col">
+                    <h5 class="text-center"><i class="hvr-buzz-out fas fa-history"></i><br /><br />Longer Lasting</h5>
+                    {{ ' 3M places the UV inhibitors in the adhesive coating. As a result, the 3M adhesive coating is protected against the damaging effects of the sun’s ultraviolet radiation.' | markdownify }}
+                </div>
+                <div class="col">
+                    <h5 class="text-center"><i class="hvr-buzz-out fas fa-clipboard-check"></i><br /><br />Comprehensive Warranty</h5>
+                    {{ ' 3M provides a comprehensive warranty that is a solemn agreement between 3M and you. The comprehensive 3M Warranty covers film and labor, and offers one of the only warranties in the industry that does not exclude ammonia as a cleaning agent.' | markdownify }}
+                </div>
+                <div class="col">
+                    <h5 class="text-center"><i class="hvr-buzz-out fas fa-chart-line"></i><br /><br />Greater Quality</h5>
+                    {{ ' 3M uses state-of-the-art testing facilities to assure film quality. The tests performed are published by the American Society for Testing and Materials (ASTM) and are available upon request.' | markdownify }}
+                </div>
+                <div class="col">
+                    <h5 class="text-center"><i class="hvr-buzz-out fas fa-bullseye"></i><br /><br />Great Clarity</h5>
+                    {{ ' 3M is the only window film provider that produces its own adhesive system developed specifically for window film.  The result will be a clean, long-lasting installation with excellent impact resistance, and no bubbling, blistering, puckering or wrinkling.' | markdownify }}
+                </div>
             </div>
-            <div class="col-12 col-md-4 py-3 text-justify">
-                <h3 class="text-center"><i class="hvr-buzz-out fas fa-history"></i><br/>Longer Lasting</h3>
-                {{ ' 3M places the UV inhibitors in the adhesive coating. As a result, the 3M adhesive coating is protected against the damaging effects of the sun’s ultraviolet radiation.' | markdownify }}
-            </div>
-            <div class="col-12 col-md-4 py-3 text-justify">
-                <h3 class="text-center"><i class="hvr-buzz-out fas fa-chart-line"></i><br/>Greater Quality</h3>
-                {{ ' 3M uses state-of-the-art testing facilities to assure film quality. The tests performed are published by the American Society for Testing and Materials (ASTM) and are available upon request.' | markdownify }}
-            </div>
-            <div class="col-12 col-md-6 py-3 text-justify">
-                <h3 class="text-center"><i class="hvr-buzz-out fas fa-clipboard-check"></i><br/>Comprehensive Warranty</h3>
-                {{ ' 3M provides a comprehensive warranty that is a solemn agreement between 3M and you. The comprehensive 3M Warranty covers film and labor, and offers one of the only warranties in the industry that does not exclude ammonia as a cleaning agent.' | markdownify }}
-            </div>
-            <div class="col-12 col-md-6 py-3 text-justify">
-                <h3 class="text-center"><i class="hvr-buzz-out fas fa-bullseye"></i><br/>Great Clarity</h3>
-                {{ ' 3M is the only window film provider that produces its own adhesive system developed specifically for window film.  The result will be a clean, long-lasting installation with excellent impact resistance, and no bubbling, blistering, puckering or wrinkling.' | markdownify }}
-            </div>
-        </div>
+        <!-- </div> -->
     </div>
 </div>
 
@@ -110,3 +113,30 @@ layout: default
         </div>
     </div>
 </div>
+
+<script>
+$(document).ready(function(){
+  $('.about').slick({
+    infinite: true,
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+  });
+});
+</script>
