@@ -137,11 +137,7 @@ layout: default
             <div class="col-12 col-md-6 text-center">
                 <!-- <img class="d-block mx-auto" id="light-gimmick-3m" width="200" src="{{ site.baseurl }}/assets/img/3Mblack.png" /> -->
                 <h1>Contact Us</h1>
-                <a class="box-shadow text-center cta-btn-alt btn-block hvr-buzz-out" target="_blank" href="tel:{{site.phone}}"><i class="fas fa-phone"></i> {{site.phone}}</a>
-                <a class="box-shadow text-center cta-btn-alt btn-block hvr-buzz-out" target="_blank" href="https://api.whatsapp.com/send?phone={{site.phone}}"><i class="fab fa-whatsapp"></i> Whatsapp</a>
-                <a class="box-shadow text-center cta-btn-alt btn-block hvr-buzz-out" target="_blank" href="{{site.facebook_url}}"><i class="fab fa-facebook"></i> Facebook</a>
-                <a class="py-2 text-center btn-link btn-block hvr-buzz-out" href="mailto:{{site.email}}"><i class="fas fa-at"></i> {{site.email}}</a>
-
+                {% include contact.html %}
             </div>
 
             <div class="col-12 col-md-6">
