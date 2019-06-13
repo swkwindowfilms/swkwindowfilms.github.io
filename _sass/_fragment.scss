@@ -78,3 +78,20 @@
         h1{color: white;}
     }
 }
+
+._fragment-autofilm-banner{
+    background-image: url('/assets/img/main.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1{color: white;}
+    }
+}
