@@ -12,49 +12,6 @@
 @import 'section';
 @import 'toggle';
 
-.cta-btn{
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
-    background-color: red;
-    color: white;
-    border-radius: 25px;
-    font-size: 1.2em;
-    text-decoration: none !important;
-    &:hover{
-        color: white;
-    }
-}
-
-.cta-btn-alt{
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
-    background-color: #333;
-    color: white;
-    border-radius: 25px;
-    font-size: 1.2em;
-    text-decoration: none !important;
-    &:hover{
-        color: white;
-    }
-}
-
-.box-shadow{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: hidden;
-    width: 100%;
-    img{
-        min-width: 100%;
-    }
-}
-
-.cursor-pointer{
-    cursor: pointer;
-}
-
-.max-height{
-    height: 100%;
-}
-
 .light-gimmick{
     background-image: url('/assets/img/bright.jpg');
     background-size: cover;
@@ -104,5 +61,17 @@
         text-shadow: 2px 2px 4px #000000;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+    }
+}
+
+#contact{
+    background-image: url('/assets/img/plain-red.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+
+    color: white;
+    a{
+        color: white;
     }
 }
