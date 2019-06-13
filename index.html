@@ -82,7 +82,7 @@ layout: default
         <h5 id="tint">All better, with 3M films</h5>
         <br/>
         <label class="switch animated infinite shake slower">
-            <input onchange="toggleTint(this.checked)" type="checkbox">
+            <input id="light-gimmick-toggle" onchange="toggleTint(this.checked)" type="checkbox">
             <span class="slider round"></span>
         </label>
     </div>
@@ -155,6 +155,7 @@ layout: default
     }
 
     $(document).ready(function () {
+        toggleTint($('#light-gimmick-toggle').checked);
         $('#tint').hide();
         $('.about').slick({
             infinite: true,
