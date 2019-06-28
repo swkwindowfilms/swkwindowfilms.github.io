@@ -84,3 +84,20 @@ footer{
 .slick-dots li.slick-active button:before, .slick-dots li button:before{
     color: white !important;
 }
+
+table{
+    width: 100%;
+    th{
+        background-color: #333;
+        color: white;
+    }
+    tr{
+        text-align: center;
+        background-color: white;
+        border: 1px solid #333;
+    }
+    td{
+        text-align: center;
+        border: 1px solid #333;
+    }
+}
