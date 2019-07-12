@@ -10,9 +10,18 @@ layout: default
     </div>
 </div>
 
+<div class="section-light _fragment-products-slick">
+<div class="slide-product container">
+    {% for product in page.products %}
+        <div>
+            <img class="box-shadow img-fluid" src="{{site.url}}/assets/img/{{product.image}}">
+            <p class="text-center mx-auto">{{product.title}}</p>
+        </div>
+    {% endfor %}
+</div>
+<div class="main-product container-fluid mx-auto">
 {% for product in page.products %}
-    <div class="section-light">
-        <div class="container">
+        <div class="container-fluid">
             <h2 class="text-center mx-auto">{{product.title}}</h2>
             <div class="row pt-2">
                 <div class="col-12 col-md-6">
@@ -33,6 +42,48 @@ layout: default
                 </div>
             </div>
         </div>
-    </div>
 {% endfor %}
+</div>
+
+</div>
+
+<script>
+ $('.main-product').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slide-product',
+  adaptiveHeight: true,
+  swipe:false
+});
+$('.slide-product').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.main-product',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+</script>
 

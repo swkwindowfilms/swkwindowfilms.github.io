@@ -95,3 +95,34 @@
         h1{color: white;}
     }
 }
+
+._fragment-products-slick{
+    .slick-next:before, .slick-prev:before{
+        color: #333;
+    }
+
+    .slick-next, .slick-prev{
+        top: 35%;
+        @include breakpoint('md'){
+            top: 40%;
+        }
+    }
+
+    .slick-next{
+        right: -12px;
+        @include breakpoint('sm'){
+            right: -25px;
+        }
+    }
+
+    .slick-prev{
+        left: -12px;
+    }
+
+    .slide-product{
+        width: 90%;
+        @include breakpoint('md'){
+            left: -25px;
+        }
+    }
+}

@@ -7,9 +7,13 @@
   
 The Crystalline Series features a proprietary, multilayer optical film nano-technology that combines over 200 layers in a film that is thinner than a Post-it® Note.
 
+<div class="table-responsive" markdown="1">
+
 ||CR90|CR70|CR60|CR50|CR40|CR20|
 |---|---|---|---|---|---|---|
 |Total Solar Energy Rejected|34%|50%|53%|56%|60%|62%|
 |Infrared Rejection|90%|97%|97%|97%|97%|97%|
 |UV Rejection|99%|99%|99%|99%|99%|99%|
 |Glare Reduction|3%|22%|32%|32%|55%|77%|
+
+</div>
