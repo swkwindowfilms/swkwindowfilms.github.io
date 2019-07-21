@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="_fragment-autofilm-banner">
+<div class="_fragment-autofilm-banner" style="background-image: url('{{ site.baseurl }}/assets/img/{{ page.bg }}')">
     <div class="content">
         <div class="container text-center">
             <h1 class="text-shadow animated fadeInDown text-nowrap"><span class="text-hide">3M</span><img width="100" src="{{ site.baseurl }}/assets/img/3M.png" /><br class="d-md-none"/> {{page.main_title}}</h1>
@@ -27,10 +27,8 @@ layout: default
                 <div class="col-12 col-md-6">
                     <img class="box-shadow img-fluid" src="{{site.url}}/assets/img/{{product.image}}">
                     <div class="mt-2 text-center">
-                        {% if product.show_contact == true %}
                             <h3>Want to know more?</h3>
                             {% include contact.html %}
-                        {% endif %}
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
