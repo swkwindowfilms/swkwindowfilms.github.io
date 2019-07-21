@@ -56,7 +56,7 @@ layout: default
   swipe:false
 });
 $('.slide-product').slick({
-  slidesToShow: 3,
+  slidesToShow: {% if page.products.size >= 3 %} 3 {% else %} {{ page.products|size }} {% endif %},
   slidesToScroll: 1,
   asNavFor: '.main-product',
   dots: true,

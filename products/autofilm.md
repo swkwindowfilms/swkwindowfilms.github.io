@@ -1,6 +1,7 @@
 ---
 layout: products
 main_title: For Automotive
+bg: cartint.jpg
 products:
     -   title: 3M™ AutoFilm Crystalline Series
         image: autofilm_crystaline.jpg

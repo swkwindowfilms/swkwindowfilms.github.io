@@ -9,7 +9,4 @@ products:
     -   title: 3M™ Safety & Security Window Film Exterior Safety Series
         image: safety.jpg
         content_path: products/safety.md
-    -   title: 3M™ AutoFilm Ceramic Series
-        image: sun.jpg
-        content_path: products/ceramic.md
 ---
